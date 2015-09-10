@@ -1,0 +1,4 @@
+<% @campaigns.each do |campaign| %>
+	<%= link_to campaign.title, campaign_path(campaign) %><br>
+<% end %>
+<%= link_to "Create a New Campaign", new_campaign_path ,class: 'btn btn-success' %>
